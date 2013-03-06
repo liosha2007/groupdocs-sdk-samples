@@ -36,7 +36,7 @@ public class Sample03 extends Base {
 		System.out.println("File to upload: " + uploadFile.getAbsolutePath());
 		FileStream body = new FileStream(new FileInputStream(uploadFile));
 
-		UploadResponse response = storageApi.Upload(IConfig.CID, path, description, body);
+		UploadResponse response = storageApi.Upload(IConfig.CID, path + uploadFile.getName(), description, body);
 		if (isValid(response)) {
 			UploadRequestResult result = response.getResult();
 			System.out.println("File type: " + result.getType());

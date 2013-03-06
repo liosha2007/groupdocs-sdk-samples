@@ -37,5 +37,10 @@
 			<artifactId>swagger-core_2.10.0</artifactId>
 			<version>1.2.0</version>
 		</dependency>
+		<dependency>
+			<groupId>swt</groupId>
+			<artifactId>osgi</artifactId>
+			<version>3.0.1</version>
+		</dependency>
 	</dependencies>
 </project>
