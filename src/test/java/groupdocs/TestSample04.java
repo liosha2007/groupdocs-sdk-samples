@@ -1,4 +1,4 @@
-package com.groupdocs;
+package groupdocs;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ import com.groupdocs.sdk.common.FileStream;
 import com.groupdocs.sdk.common.GroupDocsRequestSigner;
 
 @RunWith(JUnit4ClassRunner.class)
-public class Sample04 extends Base {
+public class TestSample04 extends Base {
 	{
 		sampleName = "Sample 4";
 	}

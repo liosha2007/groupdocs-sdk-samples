@@ -1,24 +1,22 @@
-package com.groupdocs;
-
-import org.junit.Test;
-import org.junit.internal.runners.JUnit4ClassRunner;
-import org.junit.runner.RunWith;
+package groupdocs;
 
 import com.groupdocs.sdk.api.MgmtApi;
-import com.groupdocs.sdk.common.ApiException;
 import com.groupdocs.sdk.common.ApiInvoker;
 import com.groupdocs.sdk.common.GroupDocsRequestSigner;
 import com.groupdocs.sdk.model.UserInfo;
 import com.groupdocs.sdk.model.UserInfoResponse;
+import org.junit.Test;
+import org.junit.internal.runners.JUnit4ClassRunner;
+import org.junit.runner.RunWith;
 
 @RunWith(JUnit4ClassRunner.class)
-public class Sample01 extends Base {
+public class TestSample01 extends Base {
 	{
 		sampleName = "Sample 1";
 	}
 
 	@Test
-	public void start() throws ApiException {
+	public void start() throws Exception {
 
 		ApiInvoker.getInstance().setRequestSigner(
 				new GroupDocsRequestSigner(IConfig.PKEY));

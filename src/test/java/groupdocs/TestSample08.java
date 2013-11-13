@@ -1,4 +1,4 @@
-package com.groupdocs;
+package groupdocs;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ import com.groupdocs.sdk.model.GetImageUrlsResponse;
 import com.groupdocs.sdk.model.GetImageUrlsResult;
 
 @RunWith(JUnit4ClassRunner.class)
-public class Sample08 extends Base {
+public class TestSample08 extends Base {
 	{
 		sampleName = "Sample 8";
 	}

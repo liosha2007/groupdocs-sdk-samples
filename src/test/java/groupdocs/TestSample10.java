@@ -1,4 +1,4 @@
-package com.groupdocs;
+package groupdocs;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -17,7 +17,7 @@ import com.groupdocs.sdk.model.SharedUsersResponse;
 import com.groupdocs.sdk.model.SharedUsersResult;
 
 @RunWith(JUnit4ClassRunner.class)
-public class Sample10 extends Base {
+public class TestSample10 extends Base {
 	{
 		sampleName = "Sample 10";
 	}

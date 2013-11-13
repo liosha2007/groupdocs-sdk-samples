@@ -1,4 +1,4 @@
-package com.groupdocs;
+package groupdocs;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,7 +17,7 @@ import com.groupdocs.sdk.model.UploadRequestResult;
 import com.groupdocs.sdk.model.UploadResponse;
 
 @RunWith(JUnit4ClassRunner.class)
-public class Sample03 extends Base {
+public class TestSample03 extends Base {
 	{
 		sampleName = "Sample 3";
 	}
@@ -35,8 +35,9 @@ public class Sample03 extends Base {
 		File uploadFile = new File(IConfig.FILE_TO_UPLOAD);
 		System.out.println("File to upload: " + uploadFile.getAbsolutePath());
 		FileStream body = new FileStream(new FileInputStream(uploadFile));
+        String callbackUrl = "";
 
-		UploadResponse response = storageApi.Upload(IConfig.CID, path + uploadFile.getName(), description, body);
+		UploadResponse response = storageApi.Upload(IConfig.CID, path + uploadFile.getName(), description, callbackUrl, body);
 		if (isValid(response)) {
 			UploadRequestResult result = response.getResult();
 			System.out.println("File type: " + result.getType());

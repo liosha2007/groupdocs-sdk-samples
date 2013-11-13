@@ -1,4 +1,4 @@
-package com.groupdocs;
+package groupdocs;
 
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ import com.groupdocs.sdk.model.GetDocumentInfoResponse;
 import com.groupdocs.sdk.model.GetDocumentInfoResult;
 
 @RunWith(JUnit4ClassRunner.class)
-public class Sample09 extends Base {
+public class TestSample09 extends Base {
 	{
 		sampleName = "Sample 9";
 	}

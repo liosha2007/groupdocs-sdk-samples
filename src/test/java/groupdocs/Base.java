@@ -1,4 +1,4 @@
-package com.groupdocs;
+package groupdocs;
 
 import java.lang.reflect.Method;
 
